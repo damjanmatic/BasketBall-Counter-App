@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(./markus-spiske-J_tbkGWxCH0-unsplash.jpg);
+}
+
+header {
+    min-height: 200px;
+}
+
+.counterHolder {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    max-width: 600px;
+    margin: auto auto;
+    height: 400px;
+    background: darkblue;
+    justify-items: center;
+    border: 5px solid seashell;
+    border-radius: 30px;
+}
+
+.home-title,
+.away-title {
+    margin-top: 2em;
+    font-size: 30px;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home-score,
+.away-score {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    background: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    border-radius: 30px;
+    border: 5px solid lightgray;
+}
+
+.home-score-title,
+.away-score-title {
+    color: salmon;
+    align-self: center;
+    justify-self: center;
+    font-size: 100px;
+    line-height: 1.6;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.home-btns,
+.away-btns {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-1,
+.home-2,
+.home-3,
+.away-1,
+.away-2,
+.away-3 {
+    background: darkblue;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: lightgrey;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.time-period-counter-holder {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.time {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: salmon;
+    margin-top: 0.125em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.begin-pause-btns {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: .125em;
+}
+
+.begin-pause-btns button+button {
+    margin-left: 1em;
+}
+
+.continue,
+.pause {
+    width: 80px;
+    height: 30px;
+    background: darkblue;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.continue {
+    border: 2px solid greenyellow;
+    color: greenyellow;
+}
+
+.pause {
+    border: 2px solid red;
+    color: red;
+}
+
+.resetTime {
+    margin-bottom: 1em;
+    width: 100px;
+    height: 30px;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    background: darkblue;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: salmon;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-game {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    height: 40px;
+    background: darkblue;
+    border: 2px solid salmon;
+    color: salmon;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin: 0 auto;
+    background: darkblue;
+    border: 2px dashed black;
+    color: salmon;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 1.125rem;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    color: salmon;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    margin: 0 auto;
+}

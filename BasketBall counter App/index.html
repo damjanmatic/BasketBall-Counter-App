@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Ball Counter app</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main class="counterHolder">
+        <div class="home">
+            <h3 class="home-title">home</h3>
+            <div class="home-score">
+                <h1 class="home-score-title"></h1>
+            </div>
+            <div class="home-btns">
+                <button class="home-1">+1</button>
+                <button class="home-2">+2</button>
+                <button class="home-3">+3</button>
+            </div>
+        </div>
+        <div class="time-period-counter-holder">
+            <h3 class="timer">Time</h3>
+            <p class="time">00:00</p>
+            <div class="begin-pause-btns">
+                <button class="continue">Start</button>
+                <button class="pause">Pause</button>
+            </div>
+            <button class="resetTime">Time Reset</button>
+            <button class="new-game">Start Game/ Restart</button>
+            <div class="periods">
+                <label for="period">Period</label>
+                <input id="period" type="text" value="0" readonly disabled>
+            </div>
+        </div>
+
+        <div class="away">
+            <h3 class="away-title">away</h3>
+            <div class="away-score">
+                <h1 class="away-score-title"></h1>
+            </div>
+            <div class="away-btns">
+                <button class="away-1">+1</button>
+                <button class="away-2">+2</button>
+                <button class="away-3">+3</button>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
